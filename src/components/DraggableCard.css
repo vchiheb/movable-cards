@@ -1,0 +1,87 @@
+.draggable-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    opacity: 85%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.draggable-card header {
+    padding: 5px 0px 3px 0px;
+    margin: 0;
+    background-color: #a49786;
+    margin-top: 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.draggable-card h2 {
+    padding: 0px;
+}
+
+.draggable-card h3 {
+    cursor: text;
+}
+
+.draggable-card textarea {
+    _width: 100%;
+    _height: 180px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.draggable-card textarea.card-title {
+    resize: none;
+    height: 53px; 
+    outline: none;
+    background-color: #a49786;
+    border: 1px solid #a49786; 
+    box-shadow: none; 
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'LimeLight', sans-serif;
+    text-transform: capitalize;
+}
+
+.draggable-card textarea.card-content {
+    height: 182px;
+    box-shadow: none;
+    border: none;
+}
+
+input.show {
+    display:block;
+}
+
+input.hide {
+    display: none;
+}
+
+.draggable-card .controls {
+    font-size: 12pt;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.draggable-card .controls .minimise{
+    padding-left: 20px;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.draggable-card .controls .delete  {
+    position: absolute;
+    _left: -85px;
+    _width: 200px;
+    _height: 50px;
+    outline: none;
+    right: 10px;
+    font-size: 14pt;
+    font-family: 'Muli', sans-serif;
+}
