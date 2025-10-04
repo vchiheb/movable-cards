@@ -1,5 +1,6 @@
 
 import ReactDraggable from './components/ReactDraggable';
+import ReactDnd from './components/ReactDnd';
 import { useState } from 'react';
 
 import Header from './components/Header';
@@ -16,11 +17,14 @@ function App() {
   }
 
   let content = <ReactDraggable />
+  if (selectedLibrary == 'react-dnd') {
+    content = <ReactDnd />  
+  }
 
   return (
     <>
       <Header />
-      <SelectLibrary handleSelectibrary={onSelectLibrary} />
+      <SelectLibrary handleSelectLibrary={onSelectLibrary} />
       {content}
     </>
   );

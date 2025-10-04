@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 
 
-import Draggable from 'react-draggable'; // Both at the same time
+import Draggable from 'react-draggable'; 
 
 import './DraggableCard.css';
 
@@ -51,7 +51,7 @@ export default function DraggableCard({onStopSaveCard, card, id, value, handleBo
                 <span className='delete'  onClick={() => handleDeleteCard(card)}>x</span>  
                 <span className='minimise'></span> 
             </div>
-            <textarea id={`title_{id}`} className="card-title" value={card.title} ref={inputRef} type="text" className2 ={titleEditMode ? 'show' : 'hide'} onChange={(event) => handleTitleContentChange(event, card)} onKeyDown={handleKeyDown}    />
+            <textarea id={`title_${id}`} className="card-title" value={card.title} ref={inputRef} type="text" onChange={(event) => handleTitleContentChange(event, card)} onKeyDown={handleKeyDown}    />
         </header>
         <div>
             <textarea id={`content_${id}`}  className='card-content' 
